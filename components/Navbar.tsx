@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import logo from '../public/hilink-logo.svg';
 import { NAV_LINKS } from "@/constants";
+import Button from "./Button";
 
 
 const Navbar = () => {
@@ -16,6 +17,15 @@ const Navbar = () => {
             ))}
 
         </ul>
+
+        <div className="lg:flexCenter hidden">
+            <Button
+                type="button"
+                title='login'
+                icon='/user.svg'
+                variant='btn_dark_green'
+            />
+        </div>
 
     </nav>
   )
