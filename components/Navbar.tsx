@@ -26,6 +26,7 @@ const Navbar = () => {
                 variant='btn_dark_green'
             />
         </div>
+        <Image alt="menu" height={32} width={32} src='menu.svg' className="inline-block cursor-pointer lg:hidden" />
 
     </nav>
   )
