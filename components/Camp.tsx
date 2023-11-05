@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 type CampProps = {
   backgroundImage: string;
@@ -12,7 +13,9 @@ const CampSite = ({backgroundImage, title, subtitle, peopleJoined}: CampProps) =
     bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl `}>
         <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
           <div className="flexCenter gap-4">
-            <div className="rounded-full bg-green-50 p-4"></div>
+            <div className="rounded-full bg-green-50 p-4">
+              <Image alt="map" src='/folded-map.svg' width={28} height={28}  />
+            </div>
           </div>
         </div>
     </div>
