@@ -8,12 +8,13 @@ const GetApp = () => {
         <div className='z-20 flex w-full flex-1 flex-col items-start justify-center gap-12'>
           <h2 className='bold-40 lg:bold-64 xl:max-w-[320px]'>Get for free now</h2>
           <p className='regular-16 text-gray-10'>Available in iOs and Android</p>
-          <div>
+          <div className='flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row'>
             <Button
               type='button'
-              title='Download App'
+              title='App store'
               icon='/apple.svg'
               variant='btn_white'
+              full
               
             />
             <Button
@@ -21,6 +22,7 @@ const GetApp = () => {
               title='Download App'
               icon='/android.svg'
               variant='btn_dark_green_outline'
+              full
               
             />
           </div>
